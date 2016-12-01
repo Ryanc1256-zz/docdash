@@ -469,8 +469,8 @@ span.param-type, .params td .param-type, .param-type dd {
   font-family: Consolas, Monaco, 'Andale Mono', monospace
 }
 
-.param-type + .name, .param-desc + .name {
-  margin-top: 4em;
+h4.name {
+  margin-top: 4em !important;
 }
 
 .param-type dt, .param-type dd {

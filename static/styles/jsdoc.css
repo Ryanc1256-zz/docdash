@@ -143,11 +143,12 @@ header {
 section {
   display: block;
   background-color: #fff;
+  overflow: hidden;
 }
 
 
-article div, article table, article h3, article h4, article dl, article h5 {
-  margin: 0 30px;
+article div, article p, article table, article h2, article h3, article h4, article h5, article dl, article ul {
+  margin: 0 30px !important;
 }
 
 .variation {

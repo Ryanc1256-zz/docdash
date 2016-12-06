@@ -143,7 +143,11 @@ header {
 section {
   display: block;
   background-color: #fff;
-  padding: 0 0 0 30px;
+}
+
+
+article div, article table, article h3, article h4, article dl, article h5 {
+  margin: 0 30px;
 }
 
 .variation {

@@ -179,10 +179,7 @@ function addSignatureTypes(f) {
 }
 
 function addAttribs(f) {
-    var attribs = helper.getAttribs(f);
-    var attribsString = buildAttribsString(attribs);
-
-    f.attribs = util.format('<span class="type-signature">%s</span>', attribsString);
+    helper.getAttribs(f);
 }
 
 function shortenPaths(files, commonPrefix) {
@@ -335,7 +332,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
         });
 
         if (itemsNav !== '') {
-            nav += '<h3>' + itemHeading + '</h3><ul>' + itemsNav + '</ul>';
+            nav += '<ul>' + itemsNav + '</ul>';
         }
     }
 
@@ -371,7 +368,7 @@ function buildNav(members) {
     var seen = {};
     var seenTutorials = {};
 
-    nav += buildMemberNav(members.classes, 'Classes', seen, linkto);
+    // nav += buildMemberNav(members.classes, 'Classes', seen, linkto);
     nav += buildMemberNav(members.modules, 'Modules', {}, linkto);
     nav += buildMemberNav(members.externals, 'Externals', seen, linktoExternal);
     nav += buildMemberNav(members.events, 'Events', seen, linkto);

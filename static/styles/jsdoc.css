@@ -11,12 +11,21 @@ html, body {
 
 body {
   color: #4d4e53;
-  background-color: white;
+  background-color: #ECF0F1;
   margin: 0 auto;
-  padding: 0 20px 0 0;
+  padding: 0;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
   line-height: 160%;
+}
+
+body > header {
+  background-color: #3498DB;
+  box-shadow: 2px 0 4px rgba(0,0,0, 0.55);
+  min-height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
 
 img {
@@ -134,6 +143,7 @@ tt, code, kbd, samp {
   float: right;
   min-width: 360px;
   width: calc(100% - 240px);
+  padding-top: 50px;
 }
 
 header {
@@ -142,7 +152,6 @@ header {
 
 section {
   display: block;
-  background-color: #fff;
   overflow: hidden;
 }
 
@@ -164,16 +173,33 @@ article div, article p, article table, article h2, article h3, article h4, artic
 }
 
 nav {
-  float: left;
   display: block;
   width: 250px;
   background: #fff;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+
   position: fixed;
   height: 100%;
-  box-shadow: 0 0 0.5rem #9da5ab;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.55);
   padding-left: 10px;
+  padding-top: 50px;
 }
+
+nav > h2 {
+  margin-left: -10px;
+  padding: 10px 20px;
+}
+
+nav h2 {
+  font-size: 12px;
+}
+
+nav > h2 > a {
+  display: block;
+  color: #606 !important;
+}
+
 
 nav::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -238,7 +264,7 @@ nav ul ul + ul {
 
 nav ul ul a {
   color: hsl(207, 1%, 60%);
-  border-left: 1px solid hsl(207, 10%, 86%);
+  border-left: 1px dashed hsl(207, 10%, 86%);
 }
 
 nav ul ul a,
@@ -246,17 +272,6 @@ nav ul ul a:active {
   padding-left: 20px
 }
 
-nav h2 {
-   font-size: 12px;
-   margin: 0;
-   padding: 0;
-}
-
-nav > h2 > a {
-   display: block;
-   margin: 10px 0 -10px;
-   color: #606 !important;
-}
 
 footer {
   color: hsl(0, 0%, 28%);
@@ -359,14 +374,14 @@ footer {
   width: inherit;
   line-height: 18px;
   display: block;
-  background-color: #0d152a;
+  background-color: #2C3E50;
   color: #aeaeae;
 }
 
 .prettyprint code {
   line-height: 18px;
   display: block;
-  background-color: #0d152a;
+  background-color: #2C3E50;
   color: #4D4E53;
 }
 
@@ -419,7 +434,7 @@ footer {
   border-collapse: collapse;
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  width: 100%;
+  width: 97%;
   font-size: 14px;
   margin: 1em 0;
 }
@@ -444,6 +459,10 @@ footer {
    vertical-align: top;
    padding: 10px;
    display: table-cell;
+}
+
+.params tr {
+  background-color: #f9f7f7;
 }
 
 .params td {

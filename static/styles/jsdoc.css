@@ -20,12 +20,46 @@ body {
 }
 
 body > header {
-  background-color: #3498DB;
+  background-color: #396bf7;
   box-shadow: 2px 0 4px rgba(0,0,0, 0.55);
-  min-height: 50px;
+  min-height: 57px;
   position: fixed;
   width: 100%;
   z-index: 5;
+}
+
+body > header h1 {
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 900;
+
+  margin-top: 13px;
+  display: inline-block;
+}
+
+body > header ul {
+  list-style: none;
+  float: right;
+}
+
+body > header ul li {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  font-family: 'karla', sans-serif;
+}
+
+body > header .container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+body > header ul li a {
+  color: #fff;
 }
 
 img {

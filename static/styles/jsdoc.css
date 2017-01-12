@@ -62,6 +62,7 @@ body > header ul li {
 body > header .container {
   max-width: 1080px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 body > header ul li a {

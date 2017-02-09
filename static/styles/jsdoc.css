@@ -1,13 +1,94 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 
 * {
-  box-sizing: border-box
+    box-sizing: border-box
+}
+
+header {
+    background-color: #fff !important;
+}
+
+header .container {
+    max-width: 1080px;
+    margin: 10px auto;
+    position: relative;
+    padding: 0 20px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header h1, header h1 > a {
+    margin: 0;
+    padding: 0;
+
+
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #0a4fb7;
+    font-family: 'karla', sans-serif;
 }
 
 html, body {
   height: 100%;
   width: 100%;
 }
+
+body > header {
+  box-shadow: 2px 0 4px rgba(0,0,0, 0.55);
+  min-height: 57px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+body > header ul {
+  list-style: none;
+  float: right;
+}
+
+body > header ul li {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  font-family: 'karla', sans-serif;
+
+  margin: 0 10px;
+}
+
+body > header .container {
+  max-width: 1080px;
+  margin: 10px auto;
+}
+
+
+.logo {
+  font-size: 30px;
+  line-height: 26px;
+  font-weight: 900;
+}
+
+.bt-button {
+  display: inline-block;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 5px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
 
 body {
   color: #4d4e53;
@@ -34,13 +115,7 @@ body > header h1 {
   font-size: 30px;
   line-height: 30px;
   font-weight: 900;
-
-  margin-top: 13px;
   display: inline-block;
-}
-
-body > header h1 a {
-  color: #fff;
 }
 
 body > header ul {
@@ -59,15 +134,6 @@ body > header ul li {
   margin: 0 10px;
 }
 
-body > header .container {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-body > header ul li a {
-  color: #fff;
-}
 
 img {
   max-width: 100%;
